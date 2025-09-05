@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameChanger Schedule Widget</title>
+    <style>
+        body {
+            margin: 0;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- GameChanger widget container -->
+    <div id="gc-schedule-widget-u02h"></div>
+
+    <!-- GameChanger SDK -->
+    <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+    <script>
+        window.GC.team.schedule.init({
+            target: "#gc-schedule-widget-u02h",
+            widgetId: "a1d9e24a-a23f-4e1e-ba5f-bb904e994ce3",
+            maxVerticalGamesVisible: 4,
+        });
+    </script>
+</body>
+</html>
