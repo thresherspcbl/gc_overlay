@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GameChanger Schedule Widget</title>
+    <title>GC Scoreboard</title>
     <style>
         body {
             margin: 0;
+            background: transparent; /* ensures overlay background is clear */
+        }
+
+        /* Hide non-scoreboard elements */
+        .gc-nav, .gc-footer, .extra-info {
+            display: none !important;
+        }
+
+        #gc-schedule-widget-wk21 {
             background: transparent;
         }
     </style>
 </head>
 <body>
-    <!-- GameChanger widget container -->
-    <div id="gc-schedule-widget-58dy"></div>
-
-    <!-- GameChanger SDK -->
+    <div id="gc-schedule-widget-wk21"></div>
     <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
     <script>
         window.GC.team.schedule.init({
             target: "#gc-schedule-widget-58dy",
-            widgetId: "1339017c-abaf-48fc-8a9a-d56031c2781b",
-            maxVerticalGamesVisible: 4,
+            widgetId: "YOUR_WIDGET_ID"
         });
     </script>
 </body>
